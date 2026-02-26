@@ -13,8 +13,7 @@ model User {
   telegramUserId    BigInt?
   telegramConnected Boolean  @default(false)
   createdAt         DateTime @default(now())
-
-  linkTokens        TelegramLinkToken[]
+    linkTokens        TelegramLinkToken[] 
 }
 
 model TelegramLinkToken {
@@ -23,7 +22,7 @@ model TelegramLinkToken {
   expiresAt DateTime
   createdAt DateTime @default(now())
 
-  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@index([userId])
 }

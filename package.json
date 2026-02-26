@@ -2,5 +2,29 @@
   "type": "module",
   "scripts": {
     "dev": "node src/index.js"
+  },
+  "name": "doomscroll",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ecaepsey/doomscroll.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ecaepsey/doomscroll/issues"
+  },
+  "homepage": "https://github.com/ecaepsey/doomscroll#readme",
+  "description": "",
+  "dependencies": {
+    "@prisma/adapter-pg": "^7.4.1",
+    "@prisma/client": "^6.19.2",
+    "axios": "^1.13.5",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "pg": "^8.19.0",
+    "prisma": "^6.19.2"
   }
 }
